@@ -45,7 +45,7 @@ You need two specific PDF files: (these are already included in the repo, they c
 
 4. Run the script using Python:
    ```bash
-   python timetable_generator.py
+   python generator.py
 
 5. search for the desired courses in the search bar.
 

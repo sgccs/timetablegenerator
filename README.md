@@ -36,21 +36,15 @@ You need two specific PDF files: (these are already included in the repo, they c
 
     time.pdf: This file contains the timetable slots.
     example.pdf: This file contains course data.
-### note
-2. Update the file paths in the script:
 
-    Line 45: Replace the path with the location of time.pdf.
-   
-    Line 96: Replace the path with the location of example.pdf.
-
-4. Run the script using Python:
+2. Run the script using Python:
    ```bash
    python generator.py
 
-5. search for the desired courses in the search bar.
+3. search for the desired courses in the search bar.
 
-6. click on the `add` button to select that particular course.
+4. click on the `add` button to select that particular course.
 
-7. All the selected courses are visible. They could be removed by clicking the `delete` button.
+5. All the selected courses are visible. They could be removed by clicking the `delete` button.
 
-8. Once you have selected all the required courses, click on the `submit` button.
+6. Once you have selected all the required courses, click on the `submit` button.

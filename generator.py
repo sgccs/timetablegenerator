@@ -3,6 +3,13 @@ import pdfplumber
 import pygame
 import re
 import time as t
+import os
+
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+time_pdf_path = os.path.join(script_dir, "time.pdf")
+example_pdf_path = os.path.join(script_dir, "example.pdf")
 
 pygame.init()
 
@@ -42,7 +49,7 @@ def map_timetable(day,row,slot_freq):
                 slot_freq[temp[i]]=slot_freq.get(temp[i],1) + 1
 
 time = []
-with pdfplumber.open(r"C:\Users\surya\Desktop\time.pdf") as pdf:
+with pdfplumber.open(time_pdf_path) as pdf:
     for page in pdf.pages:
         time.append(page.extract_text()) 
 
@@ -93,7 +100,7 @@ def ext(input_str):
 
     
 all_data = []
-with pdfplumber.open(r"C:\Users\surya\Desktop\example.pdf") as pdf:
+with pdfplumber.open(example_pdf_path) as pdf:
     # Iterate over each page
     for page in pdf.pages:
         # Extract the tables from the page
@@ -332,14 +339,3 @@ while running:
 pygame.quit()
 
 
-
-###################
-
-# display slots accordingly from time_after_525
-
-
-# need `to take care of tutorial + course slots and lab slots seperately
-# 
-# 
-# 
-# display the time table`

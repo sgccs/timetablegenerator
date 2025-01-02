@@ -10,7 +10,7 @@ This project is a Python-based timetable generator that processes data from two 
 
 - ### Prerequisites
 
-Before running the script, ensure you have:
+Before running the script(generator.py), ensure you have:
 - **Python 3.7+** installed on your machine.
 - Required Python packages installed (see [Requirements](#requirements)).
 
